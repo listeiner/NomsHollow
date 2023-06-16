@@ -1,4 +1,4 @@
-const bios = document.querySelector(".sprite-container");
+const sprites = document.querySelector(".sprite-container");
 
 const renderSingleElement = (element) => {
     // extract the info
@@ -15,4 +15,7 @@ const renderElements = (elementsArray) => {
     return transformation2;
 }
 
-bios.innerHTML = renderElements(characters);
+sprites.innerHTML = renderElements(characters);
+
+const bios = document.querySelector(".bio-container");
+
