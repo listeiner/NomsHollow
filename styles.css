@@ -170,31 +170,26 @@ margin: auto;
 display: flex;
 flex-direction: column;
 margin-bottom: 20px;
+height: fit-content;
 }
 
 .bio-container {
 display: flex;
 flex-wrap: nowrap;
 padding: 0;
-height: 700px;
 width: 80%;
-margin: auto;
 }
 
 .bio-image {
 flex: 1;
 padding: 20px;
 display: flex;
-align-items: center;
-justify-content: center;
 }
 
 .bio-image img {
 display: block;
-max-height: 100%;
 max-width: 100%;
-width: auto;
-height: auto;
+height: 90%;
 }
 
 .bio-text {
@@ -202,10 +197,6 @@ flex: 1;
 margin: auto;
 text-align: left;
 padding: 0;
-max-height: 100%;
-width: 100%;
-width: fit-content;
-
 }
 
 .icon {
