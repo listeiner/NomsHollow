@@ -115,6 +115,7 @@ text-align: center;
 
 p {
 font-family: "Montserrat";
+font-size: 1vw;
 }
 
 
@@ -208,8 +209,12 @@ padding: 0;
   text-align: center;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
 .summary {
+  font-size: 2vw;
+}
+
+p {
   font-size: 2vw;
 }
 
