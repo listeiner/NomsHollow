@@ -204,7 +204,8 @@ text-align: left;
 padding: 0;
 max-height: 100%;
 width: 100%;
-font-size: fit-content;
+width: fit-content;
+
 }
 
 .icon {
