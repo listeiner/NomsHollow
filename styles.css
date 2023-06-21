@@ -209,7 +209,7 @@ padding: 0;
   text-align: center;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
 .summary {
   font-size: 2vw;
 }
