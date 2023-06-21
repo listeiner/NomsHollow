@@ -1,164 +1,236 @@
+
+
+.navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /* position: -webkit-sticky; 
+  position: sticky;
+  top: 0; */
+}
 
-  li {
-    float: left;
-  }
+li {
+  float: left;
+}
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: "Montserrat";
-  }
-  
-  
-  li a:hover {
-    background-color:#c1a7db;
-  }
+li .mDrop {
+  visibility: hidden;
+  opacity: 0;
+  width: 8rem;
+  position: absolute;
+  top: 40px; 
+  transition: all 0.5s ease;
+  margin-top: 1.5rem;
+  display: none;
+}
 
-  .active {
-    background-color: #0d0d0d;
-  } 
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
 
-  
-.center {
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color:#c1a7db;
+}
+
+.active {
+  background-color: #0d0d0d;
+} 
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #c1a7db;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
 }
 
 h1 {
-  font-family: "Cinzel Decorative";
-  text-align: center;
-  font-size: 7vw;
-  margin: 1vw;
+font-family: "Cinzel Decorative";
+text-align: center;
+font-size: 7vw;
+margin: 1vw;
 }
 
 .tagline {
-  font-family: "Bad Script";
-  text-align: center;
-  font-size: 2vw;
-  margin-top: 0;
+font-family: "Bad Script";
+text-align: center;
+font-size: 2vw;
+margin-top: 0;
 }
 
 .main {
-  width: 70%;
-  margin: auto;
+width: 70%;
+margin: auto;
 
 }
 
 .summary {
-  font-family: "Montserrat";
-  font-size: 1vw;
-  text-align: center;
+font-family: "Montserrat";
+font-size: 1.5vw;
+text-align: center;
 }
 
 p {
-  font-family: "Montserrat";
+font-family: "Montserrat";
 }
 
 
 h2 {
-  font-family: "Montserrat";
-  font-size: 3vw;
-  text-align: center;
+font-family: "Montserrat";
+font-size: 3vw;
+text-align: center;
 }
 
 h3 {
-  font-family: "Montserrat";
-  font-size: 2vw;
-  margin: 0;
+font-family: "Montserrat";
+font-size: 2vw;
+margin: 0;
 }
 
+.profile-pic-container {
+  text-align: center;
+  margin: 3vw;
+
+}
+
+.profile-pic-container img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
 .sprite-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  row-gap: 20px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+row-gap: 20px;
 }
 
 .sprite-element {
-  flex: 50%;
-  min-width: 200px;
-  max-width: 30%;
+flex: 50%;
+min-width: 200px;
+max-width: 30%;
 }
 
 .sprite-element img {
-  display: block;
-  max-width: 100%;
-  text-align: center;
-  margin: auto;
+display: block;
+max-width: 100%;
+text-align: center;
+margin: auto;
 }
 
 .bio-section {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
 }
 
 .bio-container {
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0;
-  height: 700px;
-  width: 80%;
-  margin: auto;
+display: flex;
+flex-wrap: nowrap;
+padding: 0;
+height: 700px;
+width: 80%;
+margin: auto;
 }
 
 .bio-image {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+flex: 1;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .bio-image img {
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
-  height: auto;
+display: block;
+max-height: 100%;
+max-width: 100%;
+width: auto;
+height: auto;
 }
 
 .bio-text {
-  flex: 1;
-  margin: auto;
-  text-align: left;
-  padding: 0;
-  max-height: 100%;
-  width: 100%;
-  font-size: fit-content;
+flex: 1;
+margin: auto;
+text-align: left;
+padding: 0;
+max-height: 100%;
+width: 100%;
+font-size: fit-content;
+}
+
+.icon {
+  height: 4vw;
+  padding: 20px;
+}
+
+.contacts {
+  text-align: center;
 }
 
 @media (max-width: 800px) {
- .summary {
-    font-size: 2vw;
-  }
+.summary {
+  font-size: 2vw;
+}
 
-  h2 {
-    font-size: 5vw;
-  }
+h2 {
+  font-size: 5vw;
+}
 
-  h3 {
-    font-size: 4vw;
-  }
+h3 {
+  font-size: 4vw;
+}
 
-  .bio-container {
-    flex-direction: column;
-    height: auto;
-  }
+.bio-container {
+  flex-direction: column;
+  height: auto;
+}
 }
