@@ -78,7 +78,8 @@ h2 {
 
 h3 {
   font-family: "Montserrat";
-  font-size: 2.5vw;
+  font-size: 2vw;
+  margin: 0;
 }
 
 .sprite-container {
@@ -111,8 +112,10 @@ h3 {
 .bio-container {
   display: flex;
   flex-wrap: nowrap;
-  padding: 60px;
+  padding: 0;
   height: 700px;
+  width: 80%;
+  margin: auto;
 }
 
 .bio-image {
@@ -135,10 +138,9 @@ h3 {
   flex: 1;
   margin: auto;
   text-align: left;
-  padding: 20px;
+  padding: 0;
   max-height: 100%;
   width: 100%;
-  overflow: auto;
   font-size: fit-content;
 }
 
